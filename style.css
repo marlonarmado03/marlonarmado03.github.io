@@ -213,8 +213,8 @@ nav.sticky .menu-btn {
   position: absolute;
   top: 0;
   right: 0;
-  width: 45%;
-  height: 100%;
+  width: 36%;
+  height: 90%;
   background: url("Images/marlongrad.png") no-repeat center right;
   background-size: cover;
   clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
