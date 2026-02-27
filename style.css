@@ -555,6 +555,62 @@ section .button a:hover {
   color: #fff;
 }
 
+/* Previous Projects CSS */
+.projects {
+  background: var(--bg-surface);
+}
+
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.projects .project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.projects .project-card:hover {
+  transform: translateY(-6px);
+  border-color: #4a4a4a;
+}
+
+.projects .project-main {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.projects .project-thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 8px;
+  padding: 10px;
+}
+
+.projects .project-thumbs img {
+  width: 100%;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.projects .project-info {
+  padding: 20px;
+}
+
+.projects .project-info p {
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
 /* Contact Me CSS */
 .contact {
   background: var(--bg-surface);
@@ -659,6 +715,10 @@ footer .text span a:hover {
     margin: 20px 0;
     width: calc(100% / 2 - 20px);
   }
+
+  .projects .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 900px) {
@@ -752,6 +812,10 @@ footer .text span a:hover {
   .services .boxes .box {
     margin: 20px 0;
     width: 100%;
+  }
+
+  .projects .project-main {
+    height: 210px;
   }
 
   .contact .text {
