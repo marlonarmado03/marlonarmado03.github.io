@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <div class="page-noise"></div>
   <!-- Move to up button -->
   <div class="scroll-button">
     <a href="#home"><i class="fas fa-arrow-up"></i></a>
@@ -45,21 +46,30 @@
   <!-- Home Section Start -->
   <section class="home" id="home">
     <div class="home-content">
-      <div class="hero-panel reveal">
-        <div class="text">
-          <div class="text-one">Hello,</div>
-          <div class="text-two">I'm Marlon Armado</div>
-          <div class="text-three">Web and Mobile Developer</div>
-          <div class="text-four">Building responsive and user-friendly digital solutions</div>
-          <div class="tech-tags">
-            <span>PHP</span>
-            <span>React Native</span>
-            <span>MySQL</span>
-            <span>JavaScript</span>
+      <div class="hero-layout reveal">
+        <div class="hero-panel">
+          <div class="hero-badge">Available for freelance and full-time work</div>
+          <div class="text">
+            <div class="text-one">Hello,</div>
+            <div class="text-two">I'm Marlon Armado</div>
+            <div class="text-three">Web and Mobile Developer</div>
+            <div class="text-four">Building responsive and user-friendly digital solutions</div>
+            <div class="tech-tags">
+              <span>PHP</span>
+              <span>React Native</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="button hero-actions">
+            <button>Hire Me</button>
+            <a class="ghost-button" href="#projects">View Projects</a>
           </div>
         </div>
-        <div class="button">
-          <button>Hire Me</button>
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="Images/marlongrad.png" alt="Marlon Armado graduation portrait" />
+          </div>
         </div>
       </div>
     </div>
@@ -70,9 +80,6 @@
     <div class="content">
       <div class="title"><span>About Me</span></div>
       <div class="about-details reveal">
-        <div class="left">
-          <img src="Images/marlon.png" alt="Marlon Armado" />
-        </div>
         <div class="right">
           <div class="topic">Turning Ideas Into Functional Products</div>
           <p>
@@ -143,8 +150,8 @@
   <section class="services" id="services">
     <div class="content">
       <div class="title"><span>My Services</span></div>
-      <div class="boxes reveal">
-        <div class="box">
+      <div class="boxes reveal stagger-group">
+        <div class="box stagger-item">
           <div class="icon">
             <i class="fas fa-desktop"></i>
           </div>
@@ -152,7 +159,7 @@
           <p>Design and development of responsive, high-performance websites tailored to your business goals and user
             needs.</p>
         </div>
-        <div class="box">
+        <div class="box stagger-item">
           <div class="icon">
             <i class="fas fa-paint-brush"></i>
           </div>
@@ -160,7 +167,7 @@
           <p>Creation of clean, user-focused interfaces that improve usability, strengthen brand presence, and enhance
             customer experience.</p>
         </div>
-        <div class="box">
+        <div class="box stagger-item">
           <div class="icon">
             <i class="fas fa-chart-line"></i>
           </div>
@@ -168,7 +175,7 @@
           <p>Technical improvements for speed, SEO readiness, and overall site performance to support better visibility
             and engagement.</p>
         </div>
-        <div class="box">
+        <div class="box stagger-item">
           <div class="icon">
             <i class="fab fa-android"></i>
           </div>
@@ -176,7 +183,7 @@
           <p>Cross-platform mobile application development focused on reliable functionality, smooth interaction, and
             maintainable code.</p>
         </div>
-        <div class="box">
+        <div class="box stagger-item">
           <div class="icon">
             <i class="fas fa-camera-retro"></i>
           </div>
@@ -184,7 +191,7 @@
           <p>Integration of third-party and custom APIs to connect systems, automate workflows, and enable scalable
             digital solutions.</p>
         </div>
-        <div class="box">
+        <div class="box stagger-item">
           <div class="icon">
             <i class="fas fa-tablet-alt"></i>
           </div>
@@ -200,8 +207,8 @@
   <section class="projects" id="projects">
     <div class="content">
       <div class="title"><span>Previous Projects</span></div>
-      <div class="project-grid reveal">
-        <article class="project-card">
+      <div class="project-grid reveal stagger-group">
+        <article class="project-card stagger-item">
           <div class="project-media">
             <img class="project-main" src="Images/hr/hr1.jfif" alt="Human Resources Management System dashboard" />
             <div class="project-thumbs">
@@ -218,7 +225,7 @@
             </p>
           </div>
         </article>
-        <article class="project-card">
+        <article class="project-card stagger-item">
           <div class="project-media">
             <img class="project-main" src="Images/carrental/car1.jfif" alt="Car Rental and Transport System booking page" />
             <div class="project-thumbs">
@@ -233,6 +240,25 @@
             <p>
               A booking and fleet management solution for vehicle reservations, trip scheduling, availability checks,
               customer records, and transport dispatch operations.
+            </p>
+          </div>
+        </article>
+        <article class="project-card stagger-item">
+          <div class="project-media">
+            <img class="project-main" src="Images/brgy/pic1.jpg" alt="Barangay System dashboard overview" />
+            <div class="project-thumbs">
+              <img src="Images/brgy/pic2.jpg" alt="Barangay System resident records" />
+              <img src="Images/brgy/pic3.jpg" alt="Barangay System document request module" />
+              <img src="Images/brgy/pic4.jpg" alt="Barangay System clearance processing" />
+              <img src="Images/brgy/pic5.jpg" alt="Barangay System reports and monitoring" />
+              <img src="Images/brgy/pic6.jpg" alt="Barangay System administration panel" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="topic">Barangay Management System</div>
+            <p>
+              A digital barangay operations platform for resident profiling, certificate and clearance requests,
+              records management, reporting, and streamlined community service workflows.
             </p>
           </div>
         </article>
@@ -253,6 +279,35 @@
       </div>
     </div>
   </section>
+
+  <div class="chatbot-widget">
+    <button class="chatbot-toggle" type="button" aria-label="Open chat assistant" aria-expanded="false">
+      <i class="fas fa-comments"></i>
+    </button>
+    <div class="chatbot-panel" aria-hidden="true">
+      <div class="chatbot-header">
+        <div>
+          <strong>Marlon Assistant</strong>
+          <p>Quick answers for visitors</p>
+        </div>
+        <button class="chatbot-close" type="button" aria-label="Close chat assistant">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="chatbot-body">
+        <div class="chatbot-message bot">
+          Hi, you can tap one of the questions below and I'll answer right away.
+        </div>
+        <div class="chatbot-conversation"></div>
+      </div>
+      <div class="chatbot-questions">
+        <button class="chat-question" type="button" data-question="services">What services do you offer?</button>
+        <button class="chat-question" type="button" data-question="projects">What projects have you built?</button>
+        <button class="chat-question" type="button" data-question="skills">What technologies do you use?</button>
+        <button class="chat-question" type="button" data-question="contact">How can I contact you?</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer Section Start -->
   <footer>
